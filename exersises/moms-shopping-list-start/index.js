@@ -28,8 +28,6 @@ form.addEventListener("submit", function(event){
     divBtn.append(btnDone)
     divBtn.append(saveBtn)
     li.append(textC)
-    // li.append(editBtn)
-    // li.append(btnDone)
     li.append(divBtn)
     li.append(editInput)
     document.getElementsByTagName("ul")[0].append(li)
