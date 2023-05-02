@@ -2,7 +2,7 @@ const form = document.addItem
 function saveToLocalStorage() {
     localStorage.user = JSON.stringify(AllImputs);
 }
-var AllImputs = [];
+var AllImputs = []; 
 console.log(form)
 form.addEventListener("submit", function(event){
     event.preventDefault()
@@ -51,15 +51,13 @@ form.addEventListener("submit", function(event){
         if(index !== -1){
             AllImputs[index]= editInput.value
         }
-        textC.textContent = "  "+ editInput.value
-        textC.style.margin ="19px"
+        textC.textContent = "  " + editInput.value
+        textC.style.margin = "19px"
         editInput.style.display = "none"
         textC.style.display = "inline"
         saveBtn.style.display = "none"
         editBtn.style.display = "inline"
         saveToLocalStorage();
-
-
     })
     console.log(AllImputs)
     localStorage.user = JSON.stringify(AllImputs);
