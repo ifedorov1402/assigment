@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+@media only screen and (max-width: 767px){
+
+.wrapper1{
+    display: inline-block;
+    background-color: #F5C6D6;
+    height: 25%;
+    width: 100%;
+}
+.wrapper2{
+    display: grid;
+    background-color:#EE2E84;
+    height: 25%;
+    width: 100%;
+    border: 10px cornsilk;
+    padding: 10px;
+    border-right: 10px solid white;
+    border-top: 10px solid white;
+}
+.wrapper3{
+    display: grid;
+    background-color:#85CFD8;
+    height: 25%;
+    width: 100%;
+    border: 10px cornsilk;
+    padding: 10px;
+    border-right: 10px solid white;
+    border-top: 10px solid white;
+}
+.wrapper4{
+    display: grid;
+    height: 25%;
+    width: 100%;
+    border: 10px cornsilk;
+    padding: 10px;
+    border-right: 10px solid white;
+    border-top: 10px solid white;
+}
+#first{
+    background-color:#8DC63F;
+    width: 100%;
+    
+}
+#second{
+    background-color:#E76E34;
+    width: 100%;
+}
+}
+@media (min-width: 768px){
+
+    .wrapper1{
+        display: inline-block;
+        background-color: #F5C6D6;
+        height: 25%;
+        width: 100%;
+    }
+    .wrapper2{
+        display: inline-block;
+        background-color:#EE2E84;
+        height: 25%;
+        width: 25%;
+        border: 10px cornsilk;
+        padding: 10px;
+        border-right: 10px solid white;
+        border-top: 10px solid white;
+    }
+    .wrapper3{
+        display: inline-block;
+        background-color:#85CFD8;
+        height: 25%;
+        width: 50%;
+        border: 10px cornsilk;
+        padding: 10px;
+        border-right: 10px solid white;
+        border-top: 10px solid white;
+    }
+    .wrapper4{
+        display: inline-block;
+        height: 25%;
+        width: 50%;
+        border: 10px cornsilk;
+        padding: 10px;
+        border-right: 10px solid white;
+        border-top: 10px solid white;
+    }
+    #first{
+        background-color:#8DC63F;
+        width: 70%;
+        
+    }
+    #second{
+        background-color:#E76E34;
+        width: 30%;
+    }
+    }
+    
