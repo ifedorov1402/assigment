@@ -1,0 +1,61 @@
+body {
+    height: 100%;
+    background-image: url("backmain.jpg");
+  }
+a{
+    text-decoration:none;
+    color: inherit;
+}
+#logo{
+    font-size: xx-large;
+    text-align: center;
+    background-color: rgba(93, 213, 232, 0.4);
+    height: 100px;
+    grid-column: 2/3;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form{
+    background-color: rgb(255, 228, 196, 0.3);
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    border-radius: 20px;
+    padding: 30px;
+}
+.contact-form label{
+    display: block;
+    margin: 10px;
+    
+}
+.contact-form input[type="text"]
+.contact-form input[type="email"]{
+
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+#message{
+    height: 200px;
+    width: 300px;
+}
+#box5 {
+    background-color: rgb(131, 129, 131, 0.1); 
+    grid-column: 1/6;   
+    border-radius: 25px;
+    position: absolute;
+    left: 46%;
+    bottom: 0;
+    width: 100%;
+    }
+    #social img{
+        height: 30px;
+        width: 30px;
+    }
+    #social {
+        display: inline;
+        
+    }    
