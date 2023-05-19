@@ -1,0 +1,31 @@
+h1{
+    padding: 20px;
+}
+div[name="section1"] {
+    background-color: rgb(127, 127, 209, 0.4);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  div[name="section2"] {
+    background-color: rgba(69, 69, 130, 0.4);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  div[name="section3"] {
+    background-color: rgba(66, 142, 164, 0.4);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  input[name = "num1"],
+  input[name = "num2"]{
+    width: 20%;
+    display: list-item;
+    margin: 10%;
+  }
+  

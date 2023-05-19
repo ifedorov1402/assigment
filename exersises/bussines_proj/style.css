@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
   }
-
+/* Iphone  */
   @media only screen and (max-width: 767px) {
     body {
         background-color: rgb(93, 100, 98, 0.7);
@@ -39,13 +39,6 @@ html, body {
         grid-row:2;
     }
     
-    /* #menu {
-        background-color: rgb(240, 240, 240, 0.5);
-        border-radius: 10px;
-        padding: 10px;
-        display: none;
-        margin-top: 20px;
-    } */
     #about {
         background-color: rgb(224, 224, 224, 0.5);
         border-radius: 10px;
