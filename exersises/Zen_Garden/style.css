@@ -1,0 +1,164 @@
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+body{
+    width: 100%;
+    background-image:  url("back.jpeg")  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.88889;
+    
+}
+.header{
+}
+h1{
+    padding-top: 0;
+    padding-bottom: 5px;
+    border-bottom: none;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 3.2em;
+    text-transform: uppercase;
+    color:aliceblue ;
+    text-align: center;
+}
+h2{
+    text-align:center;
+    font-family: 'Julius Sans One', ;
+    color: azure;
+    font-size: 20;
+    font-style: italic;
+    font-size: 2em;
+
+}
+h3{
+    text-align:left;
+    font-family: 'Julius Sans One', ;
+    color: rgb(65, 72, 72);
+    font-size: 20;
+    font-style: italic;
+    padding: 15px;
+}
+li{
+    border-top: solid 1px #a3bdbc;
+    padding-top: 10px;
+    color: #33504d;
+    list-style: none;
+}
+.disName{
+    font-size: 0.9em;
+}
+.des{
+    margin-bottom: 0.25em;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    text-transform: uppercase;
+    
+}
+.design{
+    font-style: italic;
+}
+.authors{
+    display: block;
+    margin-bottom: 0.25em;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.container {
+    /* give the container display grid */
+    /* with six rows, 50px high */
+    /* default all cells/children on the left be 2/3 the screen width, and all on the left 1/3 */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    height: 100%;
+
+}
+.container > div {
+    border: solid rgb(8, 134, 138) 0.4px;
+}
+.container > div:nth-child(-n+2) {
+    border: solid rgb(8, 134, 138) 0.4px;
+    background-image: url(huntington.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.authors {
+    background-color: rgba(124, 239, 212, 0.86)
+}
+.links {
+    background-color: rgb(61, 145, 133, 0.85)
+}
+
+.footer1 {
+    grid-column: 2/3;
+    grid-row: 4;
+    width: 100%;
+    background-color: rgba(115, 245, 219, 0.4);
+}
+.footer {
+    grid-column: 1/3;
+    grid-row: 7;
+    width: 100%;
+    background-color: rgb(128, 255, 212, 0.4);
+    /* position: fixed; */
+    bottom: 0;
+}
+.footer3 {
+    grid-column: 1/3;
+    grid-row: 6;
+    width: 100%;
+    background-color: rgba(61, 145, 133, 0.85);
+    /* position: fixed; */
+    bottom: 0;
+    
+    
+}
+.footer3 h3, h4{
+    text-align: center;
+    font-size: 2em;
+    color:aliceblue ;
+}
+p { 
+	margin-top: 0; 
+	text-align: justify;
+    color:rgb(118, 107, 119);
+    padding: 15px;
+    font-family: 'Libre Baskerville', sans-serif;
+    
+	}
+.central1{
+    background-color: rgba(230, 245, 245, 0.8);
+}
+
+@media (max-width: 900px){
+    /* use this media query to help these two cells drop to the bottom when screens are smaller */
+    .authors {
+         
+    }
+    .links {
+
+    }
+    /* container could use some help so that it's children are full screen width */
+    .container {
+        
+    }
+}
+
+/* FLEX */
+/* use flexbox to make the icons behave like css zen garden's social icons */
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+.icons > div {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+}
