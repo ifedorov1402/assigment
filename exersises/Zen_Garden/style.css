@@ -1,14 +1,27 @@
 @import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+html, body {
+    padding: 0;
+    margin: 0;
+  }
 body{
     width: 100%;
-    background-image:  url("back.jpeg")  ;
+   
     background-repeat: no-repeat;
     background-size: cover;
     line-height: 1.88889;
     
 }
-.header{
-}
+.header {
+    height: 230px;
+    padding: 20px 0 70px 0;
+    background: #2d6360 50% 0 url(huntington.jpg) no-repeat; /* old IE fallback */
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-image: url(contours.png), url(noise.png), url(gridlines.png), url(huntington.jpg);
+    background-position: 0 0, 0 0, -5px -25px, 0 50%;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto, auto, auto, cover;
+    text-align: center;
+  }
 h1{
     padding-top: 0;
     padding-bottom: 5px;
@@ -21,7 +34,7 @@ h1{
 }
 h2{
     text-align:center;
-    font-family: 'Julius Sans One', ;
+    font-family: 'Julius Sans One', sans-serif;
     color: azure;
     font-size: 20;
     font-style: italic;
@@ -30,15 +43,16 @@ h2{
 }
 h3{
     text-align:left;
-    font-family: 'Julius Sans One', ;
+    font-family: 'Julius Sans One', sans-serif;
     color: rgb(65, 72, 72);
     font-size: 20;
     font-style: italic;
-    padding: 15px;
+    padding-left: 150px;
+    
 }
 li{
     border-top: solid 1px #a3bdbc;
-    padding-top: 10px;
+    padding-top: 50px;
     color: #33504d;
     list-style: none;
 }
@@ -58,11 +72,13 @@ li{
 }
 .authors{
     display: block;
-    margin-bottom: 0.25em;
     font-family: 'Julius Sans One', sans-serif;
     font-size: 1.2em;
     font-style: normal;
     text-transform: uppercase;
+    padding-left: 50px;
+
+    background-color: rgba(74, 220, 186, 0.46)
 }
 
 .container {
@@ -84,11 +100,14 @@ li{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.authors {
-    background-color: rgba(124, 239, 212, 0.86)
-}
+
 .links {
-    background-color: rgb(61, 145, 133, 0.85)
+    background-color: rgba(25, 233, 202, 0.85);
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    text-transform: uppercase;
+    padding-left: 50px;
 }
 
 .footer1 {
@@ -112,6 +131,7 @@ li{
     background-color: rgba(61, 145, 133, 0.85);
     /* position: fixed; */
     bottom: 0;
+    background-image: hu;
     
     
 }
@@ -123,14 +143,52 @@ li{
 p { 
 	margin-top: 0; 
 	text-align: justify;
-    color:rgb(118, 107, 119);
-    padding: 15px;
+    color:rgb(255, 255, 255);
+    padding-left: 150px;
+    padding-right: 100px;
+    padding-top: 40px;
     font-family: 'Libre Baskerville', sans-serif;
     
 	}
-.central1{
-    background-color: rgba(230, 245, 245, 0.8);
+.central1 {
+    background: #2d6360 50% 0 url(huntington.jpg) no-repeat; 
+    background-attachment: fixed;
+    background-image:  url("back.jpeg")  ;
+    background-color: rgba(230, 245, 245,0.7);
+    background-position: 0 0, 0 0, -5px -25px, 0 50%;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto, auto, auto, cover;
+    
 }
+
+.central2{
+    background-color: rgba(230, 245, 245);
+}
+.central2 p{
+    color: #33504d;
+}
+.central3{
+    background-color: rgb(128, 232, 232);
+    /* ask about background  */
+    background: #2d6360 50%  url(huntington.jpg) no-repeat;  
+    background-attachment: fixed;
+    background-image:  url("back.jpeg")  ;
+    background-color: rgba(230, 245, 245,0.7);
+
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto, auto, auto, cover;
+    
+}
+footer a.zen-validate-html::before {content: "5";}
+footer a.zen-validate-html:hover::before, footer a.zen-validate-html:focus::before {content: "%";}
+footer a.zen-validate-css::before {content: "3";}
+footer a.zen-validate-css:hover::before, footer a.zen-validate-css:focus::before {content: "#";}
+footer a.zen-license::before {content: "c";}
+footer a.zen-license:hover::before, footer a.zen-license:focus::before {content: "C";}
+footer a.zen-accessibility::before {content: "a";}
+footer a.zen-accessibility:hover::before, footer a.zen-accessibility:focus::before {content: "A";}
+footer a.zen-github::before {content: "g";}
+footer a.zen-github:hover::before, footer a.zen-github:focus::before {content: "G";}
 
 @media (max-width: 900px){
     /* use this media query to help these two cells drop to the bottom when screens are smaller */
