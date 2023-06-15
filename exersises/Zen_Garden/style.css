@@ -1,8 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
 html, body {
+    width: 100%;
     padding: 0;
     margin: 0;
   }
+@media only screen and (min-width: 901px){
 body{
     width: 100%;
    
@@ -10,6 +12,12 @@ body{
     background-size: cover;
     line-height: 1.88889;
     
+}
+@font-face {
+    font-family: 'verdemoderna';
+    font-style: normal;
+    font-weight: normal;
+    src: url(verdemoderna.woff);
 }
 .header {
     height: 230px;
@@ -22,6 +30,19 @@ body{
     background-size: auto, auto, auto, cover;
     text-align: center;
   }
+  h1::before {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    content: "";
+    width: 80px;
+    height: 80px;
+    margin: -20px 20px 0 0;
+    background: url(enso.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.6;
+  } 
 h1{
     padding-top: 0;
     padding-bottom: 5px;
@@ -31,6 +52,7 @@ h1{
     text-transform: uppercase;
     color:aliceblue ;
     text-align: center;
+
 }
 h2{
     text-align:center;
@@ -47,12 +69,12 @@ h3{
     color: rgb(65, 72, 72);
     font-size: 20;
     font-style: italic;
-    padding-left: 150px;
+    padding-left: 20px;
+    
     
 }
 li{
     border-top: solid 1px #a3bdbc;
-    padding-top: 50px;
     color: #33504d;
     list-style: none;
 }
@@ -116,13 +138,62 @@ li{
     width: 100%;
     background-color: rgba(115, 245, 219, 0.4);
 }
+.side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  
+ 
+  
 .footer {
     grid-column: 1/3;
     grid-row: 7;
     width: 100%;
-    background-color: rgb(128, 255, 212, 0.4);
-    /* position: fixed; */
-    bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(101, 110, 107, 0.452);
+    font-family: 'verdemoderna';
+    font-size: 36px;
+    text-align: center;
+    overflow: visible;
+    font-size: 36px;
+    text-indent: 0;
+    font-family: 'verdemoderna';
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    
+}
+a{
+    text-decoration: none;
+}
+footer a {
+    overflow: hidden;
+    height: 40px;
+    padding: 40px 0 0 0;
+    margin: 0 0.5em;
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
 }
 .footer3 {
     grid-column: 1/3;
@@ -130,12 +201,13 @@ li{
     width: 100%;
     background-color: rgba(61, 145, 133, 0.85);
     /* position: fixed; */
-    bottom: 0;
-    background-image: hu;
+    /* bottom: 0; */
+    background-image: url(huntington.jpg);
     
     
 }
 .footer3 h3, h4{
+    align-items: center;
     text-align: center;
     font-size: 2em;
     color:aliceblue ;
@@ -151,13 +223,14 @@ p {
     
 	}
 .central1 {
-    background: #2d6360 50% 0 url(huntington.jpg) no-repeat; 
-    background-attachment: fixed;
+    background: #67f3ec 50% 0 url(huntington.jpg) no-repeat; 
+    background-attachment: fixed, fixed, fixed, scroll;
     background-image:  url("back.jpeg")  ;
     background-color: rgba(230, 245, 245,0.7);
-    background-position: 0 0, 0 0, -5px -25px, 0 50%;
+    
     background-repeat: repeat, repeat, repeat, no-repeat;
     background-size: auto, auto, auto, cover;
+    
     
 }
 
@@ -179,34 +252,284 @@ p {
     background-size: auto, auto, auto, cover;
     
 }
-footer a.zen-validate-html::before {content: "5";}
-footer a.zen-validate-html:hover::before, footer a.zen-validate-html:focus::before {content: "%";}
-footer a.zen-validate-css::before {content: "3";}
-footer a.zen-validate-css:hover::before, footer a.zen-validate-css:focus::before {content: "#";}
-footer a.zen-license::before {content: "c";}
-footer a.zen-license:hover::before, footer a.zen-license:focus::before {content: "C";}
-footer a.zen-accessibility::before {content: "a";}
-footer a.zen-accessibility:hover::before, footer a.zen-accessibility:focus::before {content: "A";}
-footer a.zen-github::before {content: "g";}
-footer a.zen-github:hover::before, footer a.zen-github:focus::before {content: "G";}
-
-@media (max-width: 900px){
-    /* use this media query to help these two cells drop to the bottom when screens are smaller */
-    .authors {
-         
-    }
-    .links {
-
-    }
-    /* container could use some help so that it's children are full screen width */
-    .container {
-        
-    }
+.viewall{
+    background-color: aqua;
 }
 
-/* FLEX */
+  .menu{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+  }
+  .prew{
+    flex-grow: 1;
+    background-color: rgba(250, 235, 215, 0.4);
+    content: "<";
+    font-family: 'verdemoderna';
+    
+
+  }
+  .next{
+    flex-grow: 1;
+    background-color: hsla(178, 16%, 69%, 0.4);
+    content: ">";
+    font-family: 'verdemoderna';
+    
+    
+    
+
+  }
+  .viewal{
+    flex-grow: 2;
+    background-color: rgb(41, 168, 143, 0.4);
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+
+  }
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 900px){
+    @font-face {
+        font-family: 'verdemoderna';
+        font-style: normal;
+        font-weight: normal;
+        src: url(verdemoderna.woff);
+    }
+   
+    body{
+        font-size: 70%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        line-height: 1.88889;
+        
+    }
+    .central1, .central2, .central3{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .header {
+        height: 30%;
+        background: #2d6360 50% 0 url(huntington.jpg) no-repeat; /* old IE fallback */
+        background-image: url(contours.png), url(noise.png), url(gridlines.png), url(huntington.jpg);
+        background-position: 0 0, 0 0, -5px -25px, 0 50%;
+        background-repeat: repeat, repeat, repeat, no-repeat;
+        background-size: auto, auto, auto, cover;
+        background-attachment: fixed, fixed, fixed, scroll;
+        text-align: center;
+      }
+     
+    h1::before {
+        display: inline-block;
+        position: relative;
+        top: 20px;
+        content: "";
+        width: 80px;
+        height: 80px;
+        margin: -20px 20px 0 0;
+        background: url(enso.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        opacity: 0.6;
+      }
+    h1{
+       
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        color:aliceblue ;
+        text-align: center;
+       
+        
+    }
+    h2{
+        text-align:center;
+        font-family: 'Julius Sans One', sans-serif;
+        color: azure;
+        font-size: 16px;
+        font-style: italic;
+        
+       
+        
+    
+    }
+    h3{
+        text-align: center;
+        font-family: 'Julius Sans One', sans-serif;
+        color: rgb(65, 72, 72);
+        font-size: 14;
+        font-style: italic;
+        width: 80%;
+        padding-left: 20px;
+        margin: 0 auto;
+
+        
+        
+    }
+    li{
+        border-top: solid 1px #a3bdbc;
+        color: #33504d;
+        list-style: none;
+    }
+    .disName{
+        font-size: 14px;
+    }
+    .des{
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        text-transform: uppercase;
+        
+    }
+    .design{
+        font-style: italic;
+    }
+    .authors {
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        text-transform: uppercase;
+        background-color: rgba(206, 96, 96, 0.849)
+        
+    }
+    
+    .links {
+
+        background-color: rgba(28, 144, 127, 0.85);
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        text-transform: uppercase;
+    }
+    
+    .footer1 {
+        width: 100%;
+        background-color: rgba(115, 245, 219, 0.4);
+    }
+    .footer {
+        width: 100%;
+        background-color: rgb(128, 255, 212, 0.4);
+        /* position: fixed; */
+        bottom: 0;
+    }
+    .footer3 {
+        width: 100%;
+        background-color: rgba(61, 145, 133, 0.85);
+        /* position: fixed; */
+        bottom: 0;
+        font-size:50%;
+        text-align: center;
+        
+        
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    
+        
+    }
+    h3 {
+  margin: 2em 0 0 0;
+  color: #2e484c;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.8em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+p {
+  margin: 0.75em 0;
+  line-height: 2;
+}
+.side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #65ded8cf;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .prew{
+    border-top: none;
+    flex-grow: 1;
+    content: "<";
+    font-family: 'verdemoderna';
+    
+
+  }
+  .next{
+    flex-grow: 1;
+    border-top: none;
+    content: ">";
+    font-family: 'verdemoderna';
+
+  }
+  .viewal{
+    flex-grow: 2;
+    font-size: 20px;
+    text-align: center;
+
+  }
+  
+  .footer {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(101, 110, 107, 0.452);
+    font-family: 'verdemoderna';
+    text-align: center;
+    overflow: visible;
+    font-size: 30px;
+    text-indent: 0;
+    font-family: 'verdemoderna';
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    
+}
+a{
+    text-decoration: none;
+}
+footer a {
+    display: inline-block;
+    overflow: hidden;
+    height: 40px;
+    margin: 0 0.5em;
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+}
+
+}
+
+FLEX
 /* use flexbox to make the icons behave like css zen garden's social icons */
-.icons {
+/* .icons {
     display: flex;
     justify-content: space-around;
     width: 50%;
@@ -219,4 +542,4 @@ footer a.zen-github:hover::before, footer a.zen-github:focus::before {content: "
     height: 30px;
     background-color: black;
     border-radius: 50%;
-}
+} */
