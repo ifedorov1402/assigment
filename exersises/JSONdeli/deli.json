@@ -1,0 +1,65 @@
+{
+    "appertizers": [
+        {
+            "name": "fries",
+            "ingredients": ["potato", "oil"],
+            "discription": "delicouse french fries"
+        },
+        {
+            "name": "pita",
+            "ingredients": ["flour", "water"],
+            "discription": "delicouse pita bread"
+        }
+    ],
+    "cold sandwiches": [
+        {
+            "name": "chiken sandwich",
+            "ingredients": ["chiken", "bread"],
+            "discription": "delicouse chiken sandwish"
+        },
+        {
+            "name": "salmon sandwich",
+            "ingredients": ["salmon", "bread"],
+            "discription": "delicouse salmon sandwich"
+        }
+    ],
+    "hot sandwiches": [
+        {
+            "name": "beaf burger",
+            "ingredients": ["beaf", "bread"],
+            "discription": "delicouse beaf burger"
+        },
+        {
+            "name": "lamb burger",
+            "ingredients": ["lamb", "bread"],
+            "discription": "delicouse lamb burger"
+        }
+    ],
+    "desserts": [
+        {
+            "name": "kreps cake",
+            "ingredients": ["kreps", "cream"],
+            "discription": "delicouse kreps cake"
+        },
+        {
+            "name": "carrot cake",
+            "ingredients": ["carrot", "cream"],
+            "discription": "delicouse carrot cake"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "coke",
+            "ingredients": ["water", "sugar"],
+            "discription": "delicouse cola"
+        },
+        {
+            "name": "water",
+            "ingredients": ["water", "minirals"],
+            "discription": "delicouse fresh water"
+        }
+    ]
+}
+
+
+
