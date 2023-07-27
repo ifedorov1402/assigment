@@ -26,17 +26,41 @@
     margin: 10px;
 }
 
-#list {
+#todo-list{
     flex-direction: column;
     display: flex;
 }
-
-#list > li{
+#todo-list div {
+    margin-bottom: 10px;
+    text-align: left;
+}
+#ltodo-ist > li{
     list-style-type: none;
     margin: 10px auto;
 }
+ul {
+    list-style-type: none;
+}
 
-#list div {
-    margin-bottom: 10px;
-    text-align: center;
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-end;
+    flex-direction: column;
+    margin-right: 40px;
+}
+input{
+    margin: 20px;
+}
+.completed {
+    text-decoration: line-through;
+  }
+  button{
+    margin: 20px;
+  }
+li input,
+li textarea {
+    display: flex;
+    flex-direction: column;
 }
