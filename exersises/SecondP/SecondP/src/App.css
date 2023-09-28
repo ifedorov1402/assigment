@@ -1,0 +1,13 @@
+.cards-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card{
+    margin: 20px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}

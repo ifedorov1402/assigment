@@ -125,19 +125,11 @@
     
 // }
 
-
-
-
-
 const form = document.addItem;
 var AllImputs = []; 
 
 form.addEventListener("submit", function(event){
     event.preventDefault();
-    // var inputVa = {
-    //     title: form.title.value
-    // };
-
 
   const title = form.title.value;
   const price = parseFloat(form.price.value);
@@ -171,10 +163,9 @@ form.addEventListener("submit", function(event){
 
 function listData(data) {
     clearList();
-  
     for (let i = 0; i < data.length; i++) {
       const todo = data[i];
-
+      
       // Create the todo elements
       const editBtn = document.createElement("button");
       editBtn.textContent = "Edit";
@@ -213,6 +204,10 @@ function listData(data) {
       let textNode2 = document.createTextNode(" Discription: "+todo.description);
       let textC = document.createElement("div");
       textC.append(textNode,textNode1,textNode2);
+      if (todo.completed) {
+        textC.classList.add("completed");
+      }
+  
   
       const divBtn = document.createElement("div");
       divBtn.style.marginTop = "20px";
@@ -241,14 +236,6 @@ function listData(data) {
             // Toggle the completed property when the checkbox is clicked
             data[index].completed = checkbox.checked;
           }
-    
-          // Apply or remove the 'completed' class based on the checkbox's state
-          if (checkbox.checked) {
-            textC.classList.add("completed"); // Add the class if checked
-          } else {
-            textC.classList.remove("completed"); // Remove the class if unchecked
-          }
-    
           // PUT request to update the todo 
           axios.put(`https://api.vschool.io/ivan/todo/${todo._id}`, { completed: checkbox.checked })
             .then(res => {
@@ -270,7 +257,6 @@ function listData(data) {
         editInputPrice.style.display = "inline";
         editInputDescription.style.display = "inline";
         editInputImgUrl.style.display = "inline";
-
         editInputTitle.value = todo.title;
         editInputPrice.value = todo.price;
         editInputDescription.value = todo.description;
