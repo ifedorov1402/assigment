@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #CC0000; /* Red */
+    --text-color: #333; /* Dark Grey */
+    --background-color: #f4f4f4; /* Light Grey */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Common button styles */
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+footer {
+    background-color: #cc0000; 
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 5px 0; 
+    font-size: 0.9em;
+}
+
+
+/* Authorization */
+.auth-input {
+    width: 80%; /* Adjust based on preference */
+    padding: 8px 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Includes padding and border in element's width */
+}
+
+/* Enhance the button styling a bit more */
+.auth-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth background and press effect */
+}
+
+.auth-button:active {
+    transform: translateY(2px); /* Button press effect */
+}
+
+/* Error message enhancement */
+.auth-error {
+    font-weight: bold;
+}
+.toggle-form-btn {
+    background-color: var(--background-color); /* Light grey background */
+    color: var(--primary-color); /* Red text to stand out */
+    padding: 8px 12px;
+    margin-top: 15px;
+    border: 2px solid var(--primary-color); /* Red border */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-form-btn:hover {
+    background-color: var(--primary-color); /* Red background on hover */
+    color: white; /* White text on hover */
+}
